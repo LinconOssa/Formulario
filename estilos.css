@@ -1,0 +1,121 @@
+html{
+    font-family: "Quicksand", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: inherit;
+  }
+  
+body {
+    background-color: rgb(41,180,187);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+
+  }
+section{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+
+}
+.Flex-conatiner{
+  background-color: rgb(255,255,255);
+  padding: 50px;
+  width: 50%;
+  height: 82%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+
+  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgba(153, 153, 153, 0.363);
+  padding: 40px 0;
+  gap: 20px;
+}
+.form-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+.form-input{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+
+}
+.form-input input{
+  margin: 0;
+  padding: 0;
+  min-height:20px;
+  width: 100%;
+  border: 0;
+  outline: 1px solid #858585;
+}
+.form-title  img{
+  width: 25px;
+  height: 25px;
+
+}
+
+.form-title h1{
+  font-size: 30px;
+  margin: 0;
+  color: rgb(104,194,191);
+}
+textarea{
+  min-height:70px;
+  resize: none;
+}
+::placeholder{
+  padding: 0 8px;
+}
+.form-input-maps::placeholder{
+  padding: 0 8px;
+  color: aliceblue;
+}
+.form-input-maps{
+  background: rgb(40,179,186);
+  border: none;
+}
+
+.input-boton{ 
+  width: 25%;
+  background: rgb(40,179,186);
+  border: none;
+  min-height:25px;
+  color: #fff;
+}
+
+@media only screen and (max-width:800px) {
+  .form-input{
+    flex-direction: column;  
+    gap: 20px;
+  }
+  .Flex-conatiner{
+    width: 100%;
+    height: inherit;
+  
+  }
+
+}
+
+
+
+
+
+
+
+
+
