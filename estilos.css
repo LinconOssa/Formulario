@@ -4,6 +4,12 @@ html{
     padding: 0px;
     height: inherit;
   }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+
   
 body {
     background-color: rgb(41,180,187);
@@ -57,15 +63,37 @@ form{
 }
 .form-input input{
   margin: 0;
-  padding: 0;
-  min-height:20px;
-  width: 100%;
+  min-height:30px;
   border: 0;
   outline: 1px solid #858585;
+  padding:0 40px 0 10px;
+
+  width: calc(100% - 50px);
+}
+.form-icon{
+  /*No debo meter display flex si no voy a acomodar 2 hijos con position rea*/
+  width: calc(100% + 64px);
+
+}
+.form-icon i{
+  position: absolute;
+  color: #fff;
+  margin-top: 7px;
+  transform: translateX(-24px);
+
+}
+.form-icon input{
+  margin: 0;
+  min-height:30px;
+  border: 0;
+  outline: 1px solid #858585;
+  padding:0 40px 0 10px;
+  width: calc(100% - 50px);
 }
 .form-title  img{
   width: 25px;
   height: 25px;
+  cursor: pointer;
 
 }
 
@@ -79,6 +107,7 @@ textarea{
   resize: none;
 }
 ::placeholder{
+  
   padding: 0 8px;
 }
 .form-input-maps::placeholder{
@@ -91,11 +120,13 @@ textarea{
 }
 
 .input-boton{ 
-  width: 25%;
+  padding: 10px 30px;
   background: rgb(40,179,186);
   border: none;
   min-height:25px;
   color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width:800px) {
@@ -118,6 +149,31 @@ textarea{
   border: 0;
   outline:1px solid #888585 ;
   }
+  .form-input input{
+
+    min-height:40px;
+
+  }
+  .form-icon i{
+
+    margin-top: 10px;
+
+  
+  }
+  .form-icon{ 
+    width: 100%;
+  }
+
+  .form-input-boton{ 
+    display: flex;
+    justify-content: center;
+  }
+  .input-boton { 
+    padding: 20px 60px;
+    font-size: 19px;
+
+  }
+
 
 }
 
