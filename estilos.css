@@ -88,7 +88,7 @@ form{
   border: 0;
   outline: 1px solid #858585;
   padding:0 40px 0 10px;
-  width: calc(100% - 50px);
+  width: calc(100% - 50px);/*para que el witch mida lo que tiene q medir q son 10 se le resta lo que tenga en pading*/
 }
 .form-title  img{
   width: 25px;
@@ -120,7 +120,7 @@ textarea{
 }
 
 .input-boton{ 
-  padding: 10px 30px;
+  padding: 10px 30px;/*Una de las formas para que el boton se agrande sin utilizar witch es pading*/
   background: rgb(40,179,186);
   border: none;
   min-height:25px;
